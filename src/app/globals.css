@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-syne: "Syne", sans-serif;
+  --font-dm: "DM Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #faf8f3;
+  color: #0d0d0d;
+  font-family: var(--font-dm);
+  overflow-x: hidden;
+}
+
+/* Blob decorations */
+.blob {
+  position: fixed;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: -1;
+  filter: blur(70px);
+  opacity: 0.22;
+}
+
+/* Fade-up animation for scroll reveals */
+.fade-up {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.delay-1 { transition-delay: 0.1s; }
+.delay-2 { transition-delay: 0.2s; }
+.delay-3 { transition-delay: 0.3s; }
+.delay-4 { transition-delay: 0.4s; }
+
+/* Timeline line gradient */
+.timeline-line {
+  background: linear-gradient(to bottom, #f5c842, #f06c2a, #e83e8c);
+}
+
+/* Outlined text */
+.text-outline {
+  -webkit-text-stroke: 2px #0d0d0d;
+  color: transparent;
+}
