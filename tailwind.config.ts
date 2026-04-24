@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
+  darkMode: "class",
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -13,8 +14,8 @@ const config: Config = {
         dm: ["var(--font-dm)", "sans-serif"],
       },
       colors: {
-        ink: "#0d0d0d",
-        cream: "#faf8f3",
+        ink:   "rgb(var(--color-ink) / <alpha-value>)",
+        cream: "rgb(var(--color-cream) / <alpha-value>)",
         brand: {
           yellow: "#f5c842",
           orange: "#f06c2a",

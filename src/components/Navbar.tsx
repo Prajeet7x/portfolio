@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import ThemeToggle from "./ThemeToggle";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -24,23 +25,26 @@ export default function Navbar() {
         PKT<span className="text-brand-orange">.</span>
       </span>
 
-      <ul className="flex gap-8 list-none">
-        {[
-          { label: "About",      href: "#about"      },
-          { label: "Skills",     href: "#skills"     },
-          { label: "Experience", href: "#experience" },
-          { label: "Contact",    href: "#contact"    },
-        ].map(({ label, href }) => (
-          <li key={label}>
-            <Link
-              href={href}
-              className="text-xs font-medium uppercase tracking-widest text-ink hover:text-brand-orange transition-colors duration-200"
-            >
-              {label}
-            </Link>
-          </li>
-        ))}
-      </ul>
+      <div className="flex items-center gap-6">
+        <ul className="flex gap-8 list-none">
+          {[
+            { label: "About",      href: "#about"      },
+            { label: "Skills",     href: "#skills"     },
+            { label: "Experience", href: "#experience" },
+            { label: "Contact",    href: "#contact"    },
+          ].map(({ label, href }) => (
+            <li key={label}>
+              <Link
+                href={href}
+                className="text-xs font-medium uppercase tracking-widest text-ink hover:text-brand-orange transition-colors duration-200"
+              >
+                {label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+        <ThemeToggle />
+      </div>
     </nav>
   );
 }

@@ -50,7 +50,7 @@ export default function Experience() {
             />
 
             {/* Card */}
-            <div className="bg-white border-[1.5px] border-ink/10 rounded-2xl p-6">
+            <div className="bg-cream border-[1.5px] border-ink/10 rounded-2xl p-6">
               <div className="flex flex-wrap justify-between items-start gap-2 mb-1">
                 <h3 className="font-syne font-bold text-base">{exp.role}</h3>
                 <span className="text-xs font-medium bg-cream text-ink/60 px-3 py-1 rounded-full">

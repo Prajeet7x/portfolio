@@ -50,7 +50,7 @@ export default function About() {
             {chapters.map((c) => (
               <div
                 key={c.title}
-                className="flex items-start gap-4 p-4 rounded-xl border border-white/10 bg-white/5"
+                className="flex items-start gap-4 p-4 rounded-xl border border-ink/15 bg-ink/5"
               >
                 <div className={`w-10 h-10 rounded-xl flex items-center justify-center text-lg flex-shrink-0 ${c.bg}`}>
                   {c.icon}

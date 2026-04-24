@@ -5,6 +5,13 @@
 :root {
   --font-syne: "Syne", sans-serif;
   --font-dm: "DM Sans", sans-serif;
+  --color-ink:   13 13 13;
+  --color-cream: 250 248 243;
+}
+
+.dark {
+  --color-ink:   240 237 230;
+  --color-cream: 19 19 16;
 }
 
 html {
@@ -12,8 +19,8 @@ html {
 }
 
 body {
-  background-color: #faf8f3;
-  color: #0d0d0d;
+  background-color: rgb(var(--color-cream));
+  color: rgb(var(--color-ink));
   font-family: var(--font-dm);
   overflow-x: hidden;
 }
@@ -50,6 +57,6 @@ body {
 
 /* Outlined text */
 .text-outline {
-  -webkit-text-stroke: 2px #0d0d0d;
+  -webkit-text-stroke: 2px rgb(var(--color-ink));
   color: transparent;
 }

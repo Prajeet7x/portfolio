@@ -28,7 +28,7 @@ export default function Skills() {
         {skills.map((skill, i) => (
           <div
             key={skill.name}
-            className={`fade-up delay-${Math.min(i % 4 + 1, 4)} bg-white border-[1.5px] border-ink/10 rounded-2xl p-5 text-center transition-all duration-250 cursor-default hover:-translate-y-1 hover:shadow-lg ${skill.hover}`}
+            className={`fade-up delay-${Math.min(i % 4 + 1, 4)} bg-cream border-[1.5px] border-ink/10 rounded-2xl p-5 text-center transition-all duration-250 cursor-default hover:-translate-y-1 hover:shadow-lg ${skill.hover}`}
           >
             <div className="text-2xl mb-2">{skill.icon}</div>
             <div className="font-syne font-bold text-sm">{skill.name}</div>
