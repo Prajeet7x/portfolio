@@ -31,7 +31,7 @@ export default function Education() {
             Aston University, Birmingham, United Kingdom 🇬🇧
           </p>
           <p className="text-white/50 text-sm mb-4">
-            International Student · Graduated 2024
+            International Student · 2024 – 2025
           </p>
           <span className="inline-block bg-white/20 border border-white/30 text-white text-xs font-medium px-4 py-1.5 rounded-full">
             📊 Data · Strategy · Analytics
@@ -55,7 +55,7 @@ export default function Education() {
             London Metropolitan University, Islington College 🇬🇧
           </p>
           <p className="text-white/50 text-sm mb-4">
-            First Class Honours
+            First Class Honours · 2019 – 2022
           </p>
           <span className="inline-block bg-white/20 border border-white/30 text-white text-xs font-medium px-4 py-1.5 rounded-full">
             💻 Computing · Software · Technology

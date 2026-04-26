@@ -1,24 +1,24 @@
 const experiences = [
   {
-    role: "MSc Business Analytics Graduate",
-    company: "Aston University, Birmingham 🇬🇧",
-    period: "2023 – 2024",
-    desc: "Graduated with an MSc in Business Analytics, gaining expertise in data-driven decision making, statistical modelling, and analytical tools. Developed strong capability to translate complex data into strategic business insights.",
+    role: "Business Analyst",
+    company: "BUY ME ONCE · London, UK 🇬🇧",
+    period: "Apr 2025 – Aug 2025",
+    desc: "Analysed Google Analytics and Shopify datasets (50K+ user sessions) to identify optimisation opportunities, contributing to a 15% increase in conversion rates. Used Python and SQL to analyse 10K+ customer records, generating insights for customer segmentation and product performance improvements.",
     dot: "bg-brand-teal",
   },
   {
-    role: "Voice Over Artist",
-    company: "Freelance / Various Clients",
-    period: "Previous",
-    desc: "Delivered professional voice-over work across a range of formats — corporate narration, commercials, e-learning, and character work. Developed strong communication skills and attention to tone, pacing, and audience.",
-    dot: "bg-brand-pink",
+    role: "Associate Software Engineer",
+    company: "SCALA Inc. · Remote, Kathmandu, Nepal",
+    period: "Dec 2022 – Jun 2024",
+    desc: "Developed scalable, reusable UI components across 5 production applications using React.js, Next.js, and TypeScript — contributing 2500+ GitHub commits in an Agile Scrum environment. Translated 30+ Figma designs into responsive interfaces and built 8 custom React Query hooks integrating 20+ REST API endpoints, reducing API calls by 40%.",
+    dot: "bg-brand-blue",
   },
   {
-    role: "Frontend Software Engineer",
-    company: "Software Industry",
-    period: "Earlier",
-    desc: "Built responsive, accessible web interfaces using HTML5, CSS3, JavaScript, TypeScript, and Next.js. Experienced in component-based architecture, TailwindCSS, and Git-based team workflows.",
-    dot: "bg-brand-blue",
+    role: "Voice-over Artist",
+    company: "Innovate Tech · Kathmandu, Nepal",
+    period: "Apr 2021 – Dec 2022",
+    desc: "Completed voice recordings for 100+ scripts for the online education platform \"My Second Teacher.\" Developed strong communication skills and attention to tone, pacing, and audience.",
+    dot: "bg-brand-pink",
   },
 ];
 

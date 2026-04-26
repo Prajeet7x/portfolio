@@ -52,7 +52,7 @@ body {
 
 /* Timeline line gradient */
 .timeline-line {
-  background: linear-gradient(to bottom, #f5c842, #f06c2a, #e83e8c);
+  background: linear-gradient(to bottom, #f5c842, #2d7ef7, #e83e8c);
 }
 
 /* Outlined text */

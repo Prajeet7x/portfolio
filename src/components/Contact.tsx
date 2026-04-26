@@ -18,7 +18,7 @@ export default function Contact() {
         <div className="flex flex-wrap justify-center gap-3">
           <Link
             href="mailto:prajeet.thakur20@gmail.com"
-            className="inline-flex items-center gap-2 bg-ink text-cream px-6 py-3 rounded-full text-sm font-medium hover:bg-brand-orange transition-colors duration-200"
+            className="inline-flex items-center gap-2 bg-ink text-cream px-6 py-3 rounded-full text-sm font-medium hover:bg-brand-blue transition-colors duration-200"
           >
             ✉ Email me
           </Link>

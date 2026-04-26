@@ -87,7 +87,7 @@ export default async function Articles() {
               <h3 className="font-syne font-bold text-sm leading-snug line-clamp-3">
                 {article.title}
               </h3>
-              <span className="mt-auto text-xs text-brand-orange font-medium group-hover:underline">
+              <span className="mt-auto text-xs text-brand-blue font-medium group-hover:underline">
                 Read on Medium →
               </span>
             </div>

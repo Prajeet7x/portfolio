@@ -14,7 +14,7 @@ export default function Hero() {
           style={{ fontSize: "clamp(3.2rem, 7vw, 6rem)" }}>
         Prajeet
         <br />
-        <span className="text-brand-orange">Kumar</span>
+        <span className="text-brand-blue">Kumar</span>
         <br />
         <span className="text-outline">Thakur</span>
       </h1>
@@ -37,7 +37,7 @@ export default function Hero() {
       <div className="flex flex-wrap gap-4">
         <Link
           href="#contact"
-          className="inline-flex items-center gap-2 bg-ink text-cream px-7 py-4 rounded-full text-sm font-medium hover:bg-brand-orange transition-colors duration-200"
+          className="inline-flex items-center gap-2 bg-ink text-cream px-7 py-4 rounded-full text-sm font-medium hover:bg-brand-blue transition-colors duration-200"
         >
           Get in touch →
         </Link>

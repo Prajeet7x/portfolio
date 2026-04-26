@@ -1,11 +1,11 @@
 const skills = [
-  { icon: "🌐", name: "HTML5",       hover: "hover:border-brand-orange hover:shadow-brand-orange/15" },
+  { icon: "🌐", name: "HTML5",       hover: "hover:border-brand-blue hover:shadow-brand-blue/15" },
   { icon: "🎨", name: "CSS3",        hover: "hover:border-brand-blue   hover:shadow-brand-blue/15"   },
   { icon: "⚡", name: "JavaScript",  hover: "hover:border-brand-pink   hover:shadow-brand-pink/15"   },
   { icon: "🔷", name: "TypeScript",  hover: "hover:border-brand-teal   hover:shadow-brand-teal/15"   },
   { icon: "▲",  name: "Next.js",     hover: "hover:border-brand-purple hover:shadow-brand-purple/15" },
   { icon: "💨", name: "Tailwind CSS",hover: "hover:border-brand-yellow hover:shadow-brand-yellow/20" },
-  { icon: "🐙", name: "Git & GitHub",hover: "hover:border-brand-orange hover:shadow-brand-orange/15" },
+  { icon: "🐙", name: "Git & GitHub",hover: "hover:border-brand-blue hover:shadow-brand-blue/15" },
   { icon: "📊", name: "Analytics",   hover: "hover:border-brand-teal   hover:shadow-brand-teal/15"   },
 ];
 

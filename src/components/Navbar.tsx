@@ -22,7 +22,7 @@ export default function Navbar() {
       }`}
     >
       <span className="font-syne font-extrabold text-lg tracking-tight">
-        PKT<span className="text-brand-orange">.</span>
+        PKT<span className="text-brand-blue">.</span>
       </span>
 
       <div className="flex items-center gap-6">
@@ -36,7 +36,7 @@ export default function Navbar() {
             <li key={label}>
               <Link
                 href={href}
-                className="text-xs font-medium uppercase tracking-widest text-ink hover:text-brand-orange transition-colors duration-200"
+                className="text-xs font-medium uppercase tracking-widest text-ink hover:text-brand-blue transition-colors duration-200"
               >
                 {label}
               </Link>
