@@ -4,6 +4,7 @@ import About from "@/components/About";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Education from "@/components/Education";
+import Articles from "@/components/Articles";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
@@ -31,6 +32,7 @@ export default function Home() {
       <Skills />
       <Experience />
       <Education />
+      <Articles />
       <Contact />
       <Footer />
 
