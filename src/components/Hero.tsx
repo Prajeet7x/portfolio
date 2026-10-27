@@ -101,19 +101,14 @@ function ProfileCard() {
       </svg>
 
       {/* Photo panel */}
-      <div className="relative aspect-[4/5] rounded-3xl bg-brand-blue overflow-hidden">
-        <div
-          className="absolute inset-0 opacity-30"
-          style={{ background: "radial-gradient(circle at 70% 20%, rgba(255,255,255,0.6), transparent 55%)" }}
-          aria-hidden
-        />
+      <div className="relative aspect-[3/4] rounded-3xl bg-[#1a1a1a] overflow-hidden">
         <Image
-          src="/profile.webp"
-          alt="Prajeet Kumar Thakur"
+          src="/profile-photo.webp"
+          alt="Prajeet Kumar Thakur on the Royal Mile, Edinburgh"
           fill
           priority
           sizes="(min-width: 1024px) 332px, 90vw"
-          className="object-contain object-bottom"
+          className="object-cover"
         />
       </div>
 
