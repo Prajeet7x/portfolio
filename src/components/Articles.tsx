@@ -52,7 +52,7 @@ export default async function Articles() {
   return (
     <section className="max-w-5xl mx-auto px-6 sm:px-10 pb-24">
       <div className="fade-up mb-12">
-        <p className="text-xs font-medium uppercase tracking-widest text-ink/40 mb-2">
+        <p className="text-xs font-medium uppercase tracking-widest text-ink/60 mb-2">
           Writing
         </p>
         <h2
@@ -83,11 +83,11 @@ export default async function Articles() {
               </div>
             )}
             <div className="flex flex-col flex-1 p-5 gap-3">
-              <p className="text-xs text-ink/40 font-medium">{article.pubDate}</p>
+              <p className="text-xs text-ink/60 font-medium">{article.pubDate}</p>
               <h3 className="font-syne font-bold text-sm leading-snug line-clamp-3">
                 {article.title}
               </h3>
-              <span className="mt-auto text-xs text-brand-blue font-medium group-hover:underline">
+              <span className="mt-auto text-xs text-[#1f5fc4] dark:text-brand-blue font-medium group-hover:underline">
                 Read on Medium →
               </span>
             </div>

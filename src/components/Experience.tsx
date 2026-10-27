@@ -33,7 +33,7 @@ export default function Experience() {
   return (
     <section id="experience" className="max-w-5xl mx-auto px-6 sm:px-10 py-24">
       <div className="fade-up mb-12">
-        <p className="text-xs font-medium uppercase tracking-widest text-ink/40 mb-2">
+        <p className="text-xs font-medium uppercase tracking-widest text-ink/60 mb-2">
           Where I&apos;ve been
         </p>
         <h2
@@ -64,8 +64,8 @@ export default function Experience() {
                   {exp.period}
                 </span>
               </div>
-              <p className="text-sm text-ink/50 mb-3">{exp.company}</p>
-              <p className="text-sm text-ink/60 leading-relaxed">{exp.desc}</p>
+              <p className="text-sm text-ink/60 mb-3">{exp.company}</p>
+              <p className="text-sm text-ink/75 leading-relaxed">{exp.desc}</p>
             </div>
           </div>
         ))}

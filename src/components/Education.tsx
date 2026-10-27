@@ -2,7 +2,7 @@ export default function Education() {
   return (
     <section className="max-w-5xl mx-auto px-6 sm:px-10 pb-24">
       <div className="fade-up mb-12">
-        <p className="text-xs font-medium uppercase tracking-widest text-ink/40 mb-2">
+        <p className="text-xs font-medium uppercase tracking-widest text-ink/60 mb-2">
           Education
         </p>
         <h2
@@ -31,7 +31,7 @@ export default function Education() {
             Aston University, Birmingham, United Kingdom 🇬🇧
           </p>
           <p className="text-white/50 text-sm mb-4">
-            International Student · 2024 – 2025
+            Birmingham · 2024 – 2025
           </p>
           <span className="inline-block bg-white/20 border border-white/30 text-white text-xs font-medium px-4 py-1.5 rounded-full">
             📊 Data · Strategy · Analytics

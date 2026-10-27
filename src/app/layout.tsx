@@ -14,7 +14,16 @@ const dmSans = DM_Sans({
   weight: ["300", "400", "500"],
 });
 
+// Absolute base for link-preview URLs. Vercel sets VERCEL_PROJECT_PRODUCTION_URL;
+// set NEXT_PUBLIC_SITE_URL once a custom domain exists.
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ??
+  (process.env.VERCEL_PROJECT_PRODUCTION_URL
+    ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+    : "http://localhost:3000");
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: "Prajeet Kumar Thakur — Software Engineer & Data Analyst",
   description:
     "Portfolio of Prajeet Kumar Thakur — software engineer (React, TypeScript, Node.js, Golang) and MSc Business Analytics graduate based in Birmingham, UK.",
@@ -46,7 +55,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <script dangerouslySetInnerHTML={{ __html: `try{var t=localStorage.getItem('theme'),d=window.matchMedia('(prefers-color-scheme: dark)').matches;if(t==='dark'||(!t&&d))document.documentElement.classList.add('dark')}catch(e){}` }} />
+        <script dangerouslySetInnerHTML={{ __html: `document.documentElement.classList.add('js');try{var t=localStorage.getItem('theme'),d=window.matchMedia('(prefers-color-scheme: dark)').matches;if(t==='dark'||(!t&&d))document.documentElement.classList.add('dark')}catch(e){}` }} />
       </head>
       <body className={`${syne.variable} ${dmSans.variable}`}>{children}</body>
     </html>

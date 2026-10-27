@@ -1,33 +1,28 @@
-const blue   = "hover:border-brand-blue   hover:shadow-brand-blue/15";
-const teal   = "hover:border-brand-teal   hover:shadow-brand-teal/15";
-const pink   = "hover:border-brand-pink   hover:shadow-brand-pink/15";
-const purple = "hover:border-brand-purple hover:shadow-brand-purple/15";
-const yellow = "hover:border-brand-yellow hover:shadow-brand-yellow/20";
-
-const skills = [
-  { icon: "⚛",  name: "React",               hover: blue   },
-  { icon: "🔷", name: "TypeScript",          hover: blue   },
-  { icon: "▲",  name: "Next.js",             hover: purple },
-  { icon: "⚡", name: "JavaScript (ES6+)",   hover: yellow },
-  { icon: "💨", name: "Tailwind CSS",        hover: teal   },
-  { icon: "🟢", name: "Node.js & Express",   hover: teal   },
-  { icon: "🐹", name: "Golang",              hover: blue   },
-  { icon: "🔌", name: "REST APIs & tRPC",    hover: purple },
-  { icon: "🐍", name: "Python & Pandas",     hover: yellow },
-  { icon: "🗄", name: "SQL & MySQL",          hover: teal   },
-  { icon: "🍃", name: "MongoDB",             hover: teal   },
-  { icon: "📊", name: "Google Analytics",    hover: pink   },
-  { icon: "🧪", name: "Cypress testing",     hover: pink   },
-  { icon: "🔁", name: "GitHub Actions CI/CD",hover: blue   },
-  { icon: "🎨", name: "Figma",               hover: pink   },
-  { icon: "🤖", name: "LLM agents",          hover: purple },
+// Grouped by evidence so production experience reads differently from side projects.
+const groups = [
+  {
+    title: "Used in production",
+    note: "SCALA Inc., BUY ME ONCE and client work",
+    accent: "bg-brand-blue",
+    skills: [
+      "React", "TypeScript", "Next.js", "JavaScript (ES6+)", "Tailwind CSS", "Golang",
+      "REST APIs", "React Query", "MySQL", "SQL", "Python & Pandas", "Google Analytics",
+      "Cypress", "GitHub Actions CI/CD", "Turborepo", "Figma", "Agile Scrum", "Jira",
+    ],
+  },
+  {
+    title: "Used in projects",
+    note: "Personal and learning builds on GitHub",
+    accent: "bg-brand-teal",
+    skills: ["Node.js", "Express", "MongoDB", "tRPC", "Redux", "Zustand", "Vite", "LLM agents"],
+  },
 ];
 
 export default function Skills() {
   return (
     <section id="skills" className="max-w-5xl mx-auto px-6 sm:px-10 py-24">
       <div className="fade-up mb-12">
-        <p className="text-xs font-medium uppercase tracking-widest text-ink/40 mb-2">
+        <p className="text-xs font-medium uppercase tracking-widest text-ink/60 mb-2">
           What I know
         </p>
         <h2
@@ -38,14 +33,27 @@ export default function Skills() {
         </h2>
       </div>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-        {skills.map((skill, i) => (
+      <div className="grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-6">
+        {groups.map((g, i) => (
           <div
-            key={skill.name}
-            className={`fade-up delay-${Math.min(i % 4 + 1, 4)} bg-cream border-[1.5px] border-ink/10 rounded-2xl p-5 text-center transition-all duration-250 cursor-default hover:-translate-y-1 hover:shadow-lg ${skill.hover}`}
+            key={g.title}
+            className={`fade-up delay-${i + 1} bg-cream border-[1.5px] border-ink/10 rounded-2xl p-6`}
           >
-            <div className="text-2xl mb-2">{skill.icon}</div>
-            <div className="font-syne font-bold text-sm">{skill.name}</div>
+            <div className="flex items-center gap-3 mb-1">
+              <span className={`w-2.5 h-2.5 rounded-full ${g.accent}`} />
+              <h3 className="font-syne font-bold text-base">{g.title}</h3>
+            </div>
+            <p className="text-xs text-ink/60 mb-5 ml-[22px]">{g.note}</p>
+            <ul className="flex flex-wrap gap-2">
+              {g.skills.map((s) => (
+                <li
+                  key={s}
+                  className="text-sm px-3.5 py-1.5 rounded-full border-[1.5px] border-ink/15 text-ink/80"
+                >
+                  {s}
+                </li>
+              ))}
+            </ul>
           </div>
         ))}
       </div>
