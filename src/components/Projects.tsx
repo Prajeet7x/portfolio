@@ -6,16 +6,27 @@ interface Project {
   desc: string;
   stack: string[];
   links: { label: string; href: string }[];
+  note?: string;
   accent: string;
 }
 
 const projects: Project[] = [
+  {
+    title: "Pimenta — Pizzeria & Burgers",
+    tag: "Client project · freelance",
+    desc: "A fast, mobile-first marketing site for a halal pizzeria and burger takeaway in Birmingham. Built around the two things customers need: a sticky tap-to-call bar and one-tap directions. Includes a live open/closed status computed from opening hours, a tabbed menu driven by structured JSON, delivery info, offers and an embedded map, all statically generated.",
+    stack: ["Next.js 16", "React 19", "TypeScript", "Tailwind CSS", "Vercel"],
+    links: [],
+    note: "Live demo link coming soon",
+    accent: "bg-brand-orange",
+  },
   {
     title: "Job Market Data Pipeline",
     tag: "Python · LLM agents",
     desc: "Polls public Greenhouse, Lever and Ashby APIs across 60+ companies (~11,000 postings per run), deduplicates and filters them, and enriches employers with UK Home Office sponsor-register data. A scheduled cloud LLM agent then scores postings and emails a digest. Built with AI-assisted development, human in the loop: I directed the design and reviewed and tested the code.",
     stack: ["Python", "REST APIs", "LLM agents", "Gmail API", "Cron"],
     links: [],
+    note: "Private repo · walkthrough on request",
     accent: "bg-brand-purple",
   },
   {
@@ -102,9 +113,7 @@ export default function Projects() {
             </div>
 
             <div className="mt-auto flex flex-wrap gap-4">
-              {p.links.length === 0 && (
-                <span className="text-xs text-ink/40">Private repo · walkthrough on request</span>
-              )}
+              {p.note && <span className="text-xs text-ink/40">{p.note}</span>}
               {p.links.map((l) => (
                 <Link
                   key={l.href}
