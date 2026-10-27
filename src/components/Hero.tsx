@@ -46,7 +46,7 @@ export default function Hero() {
           {stats.map((s) => (
             <div key={s.label}>
               <dt className="sr-only">{s.label}</dt>
-              <dd className="font-syne font-extrabold tracking-tight leading-none mb-2 text-[1.15rem] sm:text-3xl lg:text-[2.4rem]">
+              <dd className="font-syne font-extrabold tracking-tight leading-none mb-2 text-[1.15rem] sm:text-2xl xl:text-[2rem] whitespace-nowrap">
                 {s.value}
               </dd>
               <dd aria-hidden className="text-[11px] sm:text-xs font-medium uppercase tracking-widest text-ink/60 leading-snug">
@@ -103,8 +103,8 @@ function ProfileCard() {
       {/* Photo panel */}
       <div className="relative aspect-[3/4] rounded-3xl bg-[#1a1a1a] overflow-hidden">
         <Image
-          src="/profile-photo-v2.webp"
-          alt="Prajeet Kumar Thakur on the Royal Mile, Edinburgh"
+          src="/profile-photo-v3.webp"
+          alt="Prajeet Kumar Thakur working at a laptop, lit by the screen"
           fill
           priority
           sizes="(min-width: 1024px) 332px, 90vw"
