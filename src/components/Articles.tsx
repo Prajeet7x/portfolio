@@ -50,7 +50,7 @@ export default async function Articles() {
   if (articles.length === 0) return null;
 
   return (
-    <section className="max-w-5xl mx-auto px-10 pb-24">
+    <section className="max-w-5xl mx-auto px-6 sm:px-10 pb-24">
       <div className="fade-up mb-12">
         <p className="text-xs font-medium uppercase tracking-widest text-ink/40 mb-2">
           Writing

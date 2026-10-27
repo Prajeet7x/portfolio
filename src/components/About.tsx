@@ -1,47 +1,45 @@
 export default function About() {
   return (
     <section id="about" className="mx-4 lg:mx-auto max-w-5xl">
-      <div className="bg-ink rounded-3xl px-10 py-16">
+      <div className="bg-[#0d0d0d] rounded-3xl px-6 sm:px-10 py-16">
         {/* Header */}
         <div className="fade-up mb-10">
           <p className="text-xs font-medium uppercase tracking-widest text-brand-yellow mb-2">
             Who I am
           </p>
-          <h2 className="font-syne font-extrabold text-cream leading-tight tracking-tighter"
+          <h2 className="font-syne font-extrabold text-[#faf8f3] leading-tight tracking-tighter"
               style={{ fontSize: "clamp(2rem, 4vw, 3rem)" }}>
-            Three chapters,
+            Engineer first,
             <br />
-            one story.
+            analyst by training.
           </h2>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Text */}
-          <div className="fade-up delay-1 text-cream/75 leading-relaxed space-y-4 text-base">
+          <div className="fade-up delay-1 text-[#faf8f3]/75 leading-relaxed space-y-4 text-base">
             <p>
-              I&apos;m Prajeet — an{" "}
+              I&apos;m Prajeet, a{" "}
               <strong className="text-brand-yellow font-medium">
-                international student in the UK
+                software engineer and data analyst
               </strong>{" "}
-              with a background that spans code, creativity, and commerce. I
-              started my career as a{" "}
+              based in Birmingham. I spent 18 months as an Associate Software
+              Engineer at SCALA Inc., building features across{" "}
               <strong className="text-brand-yellow font-medium">
-                software engineer
+                5 production applications
               </strong>{" "}
-              specialising in frontend development, sharpening my craft across
-              HTML, CSS, JavaScript, TypeScript, and modern frameworks.
+              with React, Next.js, TypeScript and Golang in an Agile team.
             </p>
             <p>
-              Along the way, I discovered a passion for voice, spending time as
-              a{" "}
+              I then completed an{" "}
               <strong className="text-brand-yellow font-medium">
-                professional voice-over artist
+                MSc in Business Analytics at Aston University
               </strong>{" "}
-              before returning to the world of data, graduating with an{" "}
-              <strong className="text-brand-yellow font-medium">
-                MSc in Business Analytics
-              </strong>
-              . I bring the best of all three worlds to everything I do.
+              and worked as a business analyst, using Python and SQL to find
+              what customers actually needed. Today I build websites for small
+              businesses and experiment with LLM agents. Before tech, I
+              recorded 100+ lesson scripts as a voice-over artist, which is
+              where I learned to explain things clearly.
             </p>
           </div>
 
@@ -50,16 +48,16 @@ export default function About() {
             {chapters.map((c) => (
               <div
                 key={c.title}
-                className="flex items-start gap-4 p-4 rounded-xl border border-ink/15 bg-ink/5"
+                className="flex items-start gap-4 p-4 rounded-xl border border-white/15 bg-white/5"
               >
                 <div className={`w-10 h-10 rounded-xl flex items-center justify-center text-lg flex-shrink-0 ${c.bg}`}>
                   {c.icon}
                 </div>
                 <div>
-                  <h4 className="font-syne font-bold text-cream text-sm">
+                  <h4 className="font-syne font-bold text-[#faf8f3] text-sm">
                     {c.title}
                   </h4>
-                  <p className="text-cream/50 text-xs mt-1">{c.desc}</p>
+                  <p className="text-[#faf8f3]/50 text-xs mt-1">{c.desc}</p>
                 </div>
               </div>
             ))}
@@ -73,20 +71,20 @@ export default function About() {
 const chapters = [
   {
     icon: "💻",
-    title: "Chapter 1 — Engineer",
-    desc: "Frontend dev with a love for clean UIs, TypeScript, and Next.js",
+    title: "Engineer",
+    desc: "React, Next.js, TypeScript and Golang across 5 production apps",
     bg: "bg-brand-blue/30",
   },
   {
-    icon: "🎙",
-    title: "Chapter 2 — Voice Artist",
-    desc: "Professional VO work: narration, commercials, characters",
-    bg: "bg-brand-pink/30",
+    icon: "📊",
+    title: "Analyst",
+    desc: "First Class BSc Computing, MSc Business Analytics; Python and SQL on real customer data",
+    bg: "bg-brand-teal/30",
   },
   {
-    icon: "📊",
-    title: "Chapter 3 — Analyst",
-    desc: "MSc Business Analytics — turning data into decisions",
-    bg: "bg-brand-teal/30",
+    icon: "🤖",
+    title: "Builder",
+    desc: "Freelance websites, plus an LLM agent pipeline built with AI-assisted development",
+    bg: "bg-brand-pink/30",
   },
 ];

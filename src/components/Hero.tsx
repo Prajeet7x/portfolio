@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex flex-col justify-center pt-32 pb-16 px-10 max-w-6xl mx-auto">
+    <section className="min-h-screen flex flex-col justify-center pt-32 pb-16 px-6 sm:px-10 max-w-6xl mx-auto">
       {/* Available tag */}
       <div className="inline-flex items-center gap-2 bg-brand-yellow text-ink text-xs font-medium uppercase tracking-widest px-4 py-2 rounded-full mb-6 w-fit">
         <span className="w-2 h-2 rounded-full bg-ink" />
@@ -21,16 +21,17 @@ export default function Hero() {
 
       {/* Description */}
       <p className="text-lg text-ink/60 max-w-xl leading-relaxed mb-8">
-        Frontend Engineer turned Voice Artist turned Data Analyst — a rare
-        triple-threat based in the UK. I build things, tell stories, and find
-        patterns in data.
+        Software engineer and data analyst based in Birmingham, UK. I build
+        web applications with React and TypeScript, dig into data with Python
+        and SQL, and recently built an LLM agent pipeline that turns a flood
+        of data into clear next steps.
       </p>
 
       {/* Identity chips */}
       <div className="flex flex-wrap gap-3 mb-10">
-        <Chip color="blue"   label="⚙ Frontend Dev"       />
-        <Chip color="pink"   label="🎙 Voice Artist"       />
-        <Chip color="teal"   label="📊 Business Analytics" />
+        <Chip color="blue"   label="⚙ Full-stack Engineering" />
+        <Chip color="teal"   label="📊 Data & Analytics"      />
+        <Chip color="pink"   label="🤖 AI & LLM Agents"       />
       </div>
 
       {/* CTAs */}
@@ -42,7 +43,7 @@ export default function Hero() {
           Get in touch →
         </Link>
         <Link
-          href="#experience"
+          href="#projects"
           className="inline-flex items-center gap-2 border-[1.5px] border-ink text-ink px-7 py-4 rounded-full text-sm font-medium hover:bg-ink hover:text-cream transition-colors duration-200"
         >
           View my work

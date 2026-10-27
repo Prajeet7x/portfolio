@@ -15,22 +15,25 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Prajeet Kumar Thakur — Frontend Engineer & Business Analyst",
+  title: "Prajeet Kumar Thakur — Software Engineer & Data Analyst",
   description:
-    "Portfolio of Prajeet Kumar Thakur — Frontend Software Engineer, Voice Over Artist, and MSc Business Analytics graduate based in the UK.",
+    "Portfolio of Prajeet Kumar Thakur — software engineer (React, TypeScript, Node.js, Golang) and MSc Business Analytics graduate based in Birmingham, UK.",
   keywords: [
     "Prajeet Kumar Thakur",
+    "Software Engineer",
     "Frontend Developer",
-    "Business Analytics",
+    "Full Stack Developer",
+    "Data Analyst",
+    "React",
     "Next.js",
     "TypeScript",
-    "Voice Over Artist",
+    "Birmingham",
     "UK",
   ],
   authors: [{ name: "Prajeet Kumar Thakur" }],
   openGraph: {
     title: "Prajeet Kumar Thakur",
-    description: "Frontend Engineer · Voice Artist · Business Analyst",
+    description: "Software Engineer · Data Analyst · AI builder",
     type: "website",
   },
 };

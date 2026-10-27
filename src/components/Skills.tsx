@@ -1,17 +1,31 @@
+const blue   = "hover:border-brand-blue   hover:shadow-brand-blue/15";
+const teal   = "hover:border-brand-teal   hover:shadow-brand-teal/15";
+const pink   = "hover:border-brand-pink   hover:shadow-brand-pink/15";
+const purple = "hover:border-brand-purple hover:shadow-brand-purple/15";
+const yellow = "hover:border-brand-yellow hover:shadow-brand-yellow/20";
+
 const skills = [
-  { icon: "🌐", name: "HTML5",       hover: "hover:border-brand-blue hover:shadow-brand-blue/15" },
-  { icon: "🎨", name: "CSS3",        hover: "hover:border-brand-blue   hover:shadow-brand-blue/15"   },
-  { icon: "⚡", name: "JavaScript",  hover: "hover:border-brand-pink   hover:shadow-brand-pink/15"   },
-  { icon: "🔷", name: "TypeScript",  hover: "hover:border-brand-teal   hover:shadow-brand-teal/15"   },
-  { icon: "▲",  name: "Next.js",     hover: "hover:border-brand-purple hover:shadow-brand-purple/15" },
-  { icon: "💨", name: "Tailwind CSS",hover: "hover:border-brand-yellow hover:shadow-brand-yellow/20" },
-  { icon: "🐙", name: "Git & GitHub",hover: "hover:border-brand-blue hover:shadow-brand-blue/15" },
-  { icon: "📊", name: "Analytics",   hover: "hover:border-brand-teal   hover:shadow-brand-teal/15"   },
+  { icon: "⚛",  name: "React",               hover: blue   },
+  { icon: "🔷", name: "TypeScript",          hover: blue   },
+  { icon: "▲",  name: "Next.js",             hover: purple },
+  { icon: "⚡", name: "JavaScript (ES6+)",   hover: yellow },
+  { icon: "💨", name: "Tailwind CSS",        hover: teal   },
+  { icon: "🟢", name: "Node.js & Express",   hover: teal   },
+  { icon: "🐹", name: "Golang",              hover: blue   },
+  { icon: "🔌", name: "REST APIs & tRPC",    hover: purple },
+  { icon: "🐍", name: "Python & Pandas",     hover: yellow },
+  { icon: "🗄", name: "SQL & MySQL",          hover: teal   },
+  { icon: "🍃", name: "MongoDB",             hover: teal   },
+  { icon: "📊", name: "Google Analytics",    hover: pink   },
+  { icon: "🧪", name: "Cypress testing",     hover: pink   },
+  { icon: "🔁", name: "GitHub Actions CI/CD",hover: blue   },
+  { icon: "🎨", name: "Figma",               hover: pink   },
+  { icon: "🤖", name: "LLM agents",          hover: purple },
 ];
 
 export default function Skills() {
   return (
-    <section id="skills" className="max-w-5xl mx-auto px-10 py-24">
+    <section id="skills" className="max-w-5xl mx-auto px-6 sm:px-10 py-24">
       <div className="fade-up mb-12">
         <p className="text-xs font-medium uppercase tracking-widest text-ink/40 mb-2">
           What I know

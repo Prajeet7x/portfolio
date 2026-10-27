@@ -1,5 +1,12 @@
 const experiences = [
   {
+    role: "Freelance Web Developer",
+    company: "Self-employed · Birmingham, UK 🇬🇧",
+    period: "2025 – Present",
+    desc: "Design and build responsive websites for small businesses, working with marketing partner The Social Signal on client delivery from brief to launch. Built and deployed a travel website end to end, covering design, development and deployment.",
+    dot: "bg-brand-yellow",
+  },
+  {
     role: "Business Analyst",
     company: "BUY ME ONCE · London, UK 🇬🇧",
     period: "Apr 2025 – Aug 2025",
@@ -10,21 +17,21 @@ const experiences = [
     role: "Associate Software Engineer",
     company: "SCALA Inc. · Remote, Kathmandu, Nepal",
     period: "Dec 2022 – Jun 2024",
-    desc: "Developed scalable, reusable UI components across 5 production applications using React.js, Next.js, and TypeScript — contributing 2500+ GitHub commits in an Agile Scrum environment. Translated 30+ Figma designs into responsive interfaces and built 8 custom React Query hooks integrating 20+ REST API endpoints, reducing API calls by 40%.",
+    desc: "Built backend and frontend features across 5 production applications, integrating MySQL with a Golang backend serving a Next.js and TypeScript frontend. Integrated 20+ REST API endpoints via 8 reusable React Query hooks, cutting redundant API calls by 40%. Translated Figma designs into responsive interfaces with TailwindCSS (25% faster UI delivery), wrote Cypress end-to-end tests and shipped through GitHub Actions CI/CD: 2,500+ commits and 200+ pull request reviews in an Agile team.",
     dot: "bg-brand-blue",
   },
   {
     role: "Voice-over Artist",
     company: "Innovate Tech · Kathmandu, Nepal",
     period: "Apr 2021 – Dec 2022",
-    desc: "Completed voice recordings for 100+ scripts for the online education platform \"My Second Teacher.\" Developed strong communication skills and attention to tone, pacing, and audience.",
+    desc: "Recorded 100+ lesson scripts for the online education platform \"My Second Teacher\".",
     dot: "bg-brand-pink",
   },
 ];
 
 export default function Experience() {
   return (
-    <section id="experience" className="max-w-5xl mx-auto px-10 py-24">
+    <section id="experience" className="max-w-5xl mx-auto px-6 sm:px-10 py-24">
       <div className="fade-up mb-12">
         <p className="text-xs font-medium uppercase tracking-widest text-ink/40 mb-2">
           Where I&apos;ve been

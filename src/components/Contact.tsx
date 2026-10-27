@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export default function Contact() {
   return (
-    <section id="contact" className="max-w-5xl mx-auto px-10 pb-24">
-      <div className="fade-up bg-brand-yellow rounded-3xl p-16 text-center">
+    <section id="contact" className="max-w-5xl mx-auto px-6 sm:px-10 pb-24">
+      <div className="fade-up bg-brand-yellow rounded-3xl p-8 sm:p-16 text-center">
         <h2
           className="font-syne font-extrabold tracking-tighter leading-tight mb-4"
           style={{ fontSize: "clamp(1.8rem, 4vw, 2.8rem)" }}
@@ -11,8 +11,8 @@ export default function Contact() {
           Let&apos;s build something together.
         </h2>
         <p className="text-ink/60 text-base mb-8 max-w-md mx-auto">
-          Whether it&apos;s a data project, a frontend build, or a voice job —
-          I&apos;m open to conversations.
+          Open to software engineering, data and AI roles in the UK. I&apos;d
+          love to hear what you&apos;re building.
         </p>
 
         <div className="flex flex-wrap justify-center gap-3">
