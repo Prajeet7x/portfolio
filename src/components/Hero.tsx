@@ -103,7 +103,7 @@ function ProfileCard() {
       {/* Photo panel */}
       <div className="relative aspect-[3/4] rounded-3xl bg-[#1a1a1a] overflow-hidden">
         <Image
-          src="/profile-photo-v3.webp"
+          src="/profile-photo-v4.webp"
           alt="Prajeet Kumar Thakur working at a laptop, lit by the screen"
           fill
           priority
