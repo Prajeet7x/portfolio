@@ -54,9 +54,9 @@ export default function About() {
                   {c.icon}
                 </div>
                 <div>
-                  <h4 className="font-syne font-bold text-[#faf8f3] text-sm">
+                  <h3 className="font-syne font-bold text-[#faf8f3] text-sm">
                     {c.title}
-                  </h4>
+                  </h3>
                   <p className="text-[#faf8f3]/50 text-xs mt-1">{c.desc}</p>
                 </div>
               </div>
