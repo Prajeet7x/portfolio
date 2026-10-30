@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import TypingTerminal from "./TypingTerminal";
 
 interface Project {
   title: string;
@@ -168,20 +169,7 @@ function Visual({ project: p }: { project: Project }) {
     );
   }
   if (p.terminal) {
-    return (
-      <div className="aspect-video bg-[#0d0d0d] border-b border-ink/10 p-5 font-mono text-[12px] sm:text-[13px] leading-relaxed overflow-hidden" aria-hidden>
-        <div className="flex gap-1.5 mb-4">
-          <span className="w-2.5 h-2.5 rounded-full bg-[#ff5f57]" />
-          <span className="w-2.5 h-2.5 rounded-full bg-[#febc2e]" />
-          <span className="w-2.5 h-2.5 rounded-full bg-[#28c840]" />
-        </div>
-        {p.terminal.map((line, i) => (
-          <p key={i} className={line.startsWith("$") ? "text-[#f5c842]" : "text-[#d8d5cd]"}>
-            {line}
-          </p>
-        ))}
-      </div>
-    );
+    return <TypingTerminal lines={p.terminal} />;
   }
   return null;
 }
