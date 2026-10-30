@@ -77,6 +77,48 @@ body {
   background: linear-gradient(to bottom, #f5c842, #2d7ef7, #e83e8c);
 }
 
+/* Scroll-lit timeline (see Timeline.tsx) */
+.timeline-glow {
+  filter: drop-shadow(0 0 4px rgba(45, 126, 247, 0.75)) drop-shadow(0 0 10px rgba(232, 62, 140, 0.45));
+}
+.timeline-head {
+  background: #fff;
+  box-shadow: 0 0 8px 3px rgba(255, 255, 255, 0.7), 0 0 18px 6px rgba(45, 126, 247, 0.55);
+  transition: opacity 0.3s ease;
+}
+.timeline-dot {
+  background: rgb(var(--color-ink) / 0.15);
+  transition: background-color 0.4s ease, box-shadow 0.4s ease, transform 0.4s ease;
+}
+.timeline-item[data-lit="true"] .timeline-dot {
+  background: var(--dot);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--dot) 25%, transparent), 0 0 14px 2px var(--dot);
+  transform: scale(1.15);
+}
+.timeline-card {
+  transition: border-color 0.4s ease;
+}
+.timeline-item[data-lit="true"] .timeline-card {
+  border-color: color-mix(in srgb, var(--dot) 35%, transparent);
+}
+@media (prefers-reduced-motion: reduce) {
+  .timeline-dot, .timeline-card, .timeline-head { transition: none; }
+}
+
+/* Typing terminal caret (see TypingTerminal.tsx) */
+.term-caret {
+  display: inline-block;
+  width: 0.55em;
+  height: 1.1em;
+  margin-left: 2px;
+  vertical-align: text-bottom;
+  background: #f5c842;
+  animation: caret-blink 1s steps(1) infinite;
+}
+@keyframes caret-blink {
+  50% { opacity: 0; }
+}
+
 /* Outlined text */
 .text-outline {
   -webkit-text-stroke: 2px rgb(var(--color-ink));
