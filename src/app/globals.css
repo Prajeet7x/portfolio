@@ -18,6 +18,18 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Visible keyboard focus everywhere (mouse clicks don't trigger it). */
+:focus-visible {
+  outline: 2px solid #2d7ef7;
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+/* Anchored sections land below the fixed navbar. */
+section[id] {
+  scroll-margin-top: 5rem;
+}
+
 body {
   background-color: rgb(var(--color-cream));
   color: rgb(var(--color-ink));

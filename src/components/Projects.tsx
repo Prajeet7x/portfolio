@@ -23,8 +23,7 @@ const projects: Project[] = [
     built: "A fast, fully static, mobile-first site: sticky tap-to-call bar, one-tap directions, a live open/closed status computed from opening hours, and a tabbed menu driven by structured JSON.",
     result: "Delivered as a live demo for the owner's review.",
     stack: ["Next.js 16", "React 19", "TypeScript", "Tailwind CSS", "Vercel"],
-    links: [],
-    note: "Live demo link coming soon",
+    links: [{ label: "Live demo", href: "https://pimenta-psi.vercel.app/" }],
     image: { src: "/projects/pimenta.webp", alt: "Pimenta website hero with Call to order button and live opening status" },
     accent: "bg-brand-orange",
   },
@@ -94,7 +93,7 @@ export default function Projects() {
           href="https://github.com/Prajeet7x?tab=repositories"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-sm font-medium text-[#1f5fc4] dark:text-brand-blue hover:underline"
+          className="inline-flex items-center min-h-[44px] text-sm font-medium text-[#1f5fc4] dark:text-brand-blue hover:underline"
         >
           More on GitHub →
         </Link>
@@ -129,7 +128,7 @@ export default function Projects() {
                 ))}
               </div>
 
-              <div className="mt-auto flex flex-wrap gap-4">
+              <div className="mt-auto flex flex-wrap items-center gap-x-5 gap-y-1">
                 {p.note && <span className="text-xs text-ink/60">{p.note}</span>}
                 {p.links.map((l) => (
                   <Link
@@ -137,7 +136,7 @@ export default function Projects() {
                     href={l.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm font-medium text-[#1f5fc4] dark:text-brand-blue hover:underline"
+                    className="inline-flex items-center min-h-[44px] text-sm font-medium text-[#1f5fc4] dark:text-brand-blue hover:underline"
                   >
                     {l.label} →
                   </Link>
